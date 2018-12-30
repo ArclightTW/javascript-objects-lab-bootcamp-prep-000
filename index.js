@@ -7,7 +7,6 @@ function updateObjectWithKeyAndValue(object, key, value) {
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
-  Object.assign(recipes, object)
-  delete recipes[key]
-  return recipes
+  delete object[key]
+  return object
 }
